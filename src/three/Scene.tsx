@@ -5,7 +5,7 @@ import Particles from "./Particles.tsx";
 const scene = new THREE.Scene();
 // Canvas
 const renderer = new THREE.WebGLRenderer();
-renderer.setClearColor("#262837");
+renderer.setClearColor("#000");
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 // Base camera
