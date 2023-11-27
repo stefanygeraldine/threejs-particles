@@ -64,11 +64,19 @@ function Particles(props: IProps) {
 
     /*
     const cube = new THREE.Mesh(
-      new THREE.BoxGeometry(),
+      new THREE.BoxGeometry(),Float32Array is:
       new THREE.MeshBasicMaterial(),
     );
     scene.add(cube);
      */
+
+    // Particle
+    const particlesGeometry2 = new THREE.SphereGeometry(1, 32, 32);
+    const particlesMaterial2 = new THREE.PointsMaterial();
+    particlesMaterial2.size = 0.02;
+    particlesMaterial2.sizeAttenuation = true;
+    const particles2 = new THREE.Points(particlesGeometry2, particlesMaterial2);
+    scene.add(particles2);
 
     camera.position.z = 5;
     const clock = new THREE.Clock();
